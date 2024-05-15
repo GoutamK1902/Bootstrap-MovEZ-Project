@@ -22,10 +22,10 @@
         margin: 0;
       }
       .dark-mode {
-        width: 10%;
+        /* width: 10%;
         position: absolute;
-        left: 45%;
-        display: flex;
+        left: 45%; */
+        display: inline-flex;
         align-items: center;
         justify-content: center;
       }
@@ -34,9 +34,6 @@
 
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="dark-mode">
-        <img id="toggleButton" src="sun.svg" alt="light/dark mode icon" />
-      </div>
       <div class="container-fluid">
         <a class="navbar-brand" href="#"
           ><img src="truck.svg" alt="brand-icon" height="25px" /> movEZ</a
@@ -90,7 +87,12 @@
     </nav>
     <div class="container mt-0 mb-5">
       <div class="px-4 pt-5 my-5 text-center border-bottom">
-        <h1 class="display-4 fw-bold text-body-emphasis">Move With Ease</h1>
+        <h1 class="display-4 fw-bold text-body-emphasis">
+          Move With Ease
+          <div class="dark-mode">
+            <img id="toggleButton" src="sun.svg" alt="light/dark mode icon" />
+          </div>
+        </h1>
         <div class="col-lg-6 mx-auto">
           <p class="lead mb-4">
             "Choose SwiftShift for a hassle-free move! Our expert team handles

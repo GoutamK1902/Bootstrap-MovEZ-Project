@@ -39,10 +39,10 @@ function modeSvg() {
   let element = document.getElementById("toggleButton");
   let srcValue = element.getAttribute("src");
 
-  if (srcValue === "sun.svg") {
-    element.setAttribute("src", "moon.svg");
+  if (srcValue === "lightbulb-fill.svg") {
+    element.setAttribute("src", "lightbulb.svg");
   } else {
-    element.setAttribute("src", "sun.svg");
+    element.setAttribute("src", "lightbulb-fill.svg");
   }
 }
 // Add event listener to button

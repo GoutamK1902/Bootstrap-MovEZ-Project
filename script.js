@@ -12,6 +12,7 @@ function toggleAttribute() {
     htmlElement.setAttribute(attributeName, attributeValue);
   }
   toggleText();
+  buttonbg();
 }
 function toggleText() {
   var element = document.getElementById("toggleButton");
@@ -20,6 +21,17 @@ function toggleText() {
 
   // Update the text content of the element
   element.textContent = newText;
+}
+
+function buttonbg() {
+  let element = document.getElementById("toggleButton");
+  if (element.classList.contains("btn-dark")) {
+    element.classList.remove("btn-dark");
+    element.classList.add("btn-light");
+  } else if (element.classList.contains("btn-light")) {
+    element.classList.remove("btn-light");
+    element.classList.add("btn-dark");
+  }
 }
 
 // Add event listener to button

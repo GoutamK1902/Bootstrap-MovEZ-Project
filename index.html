@@ -17,11 +17,26 @@
         height: 40px;
         border-radius: 6px;
       }
+      #toggleButton {
+        height: 25px;
+        margin: 0;
+      }
+      .dark-mode {
+        width: 10%;
+        position: absolute;
+        left: 45%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
     </style>
   </head>
 
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="dark-mode">
+        <img id="toggleButton" src="sun.svg" alt="light/dark mode icon" />
+      </div>
       <div class="container-fluid">
         <a class="navbar-brand" href="#"
           ><img src="truck.svg" alt="brand-icon" height="25px" /> movEZ</a
@@ -70,7 +85,6 @@
             />
             <button class="btn btn-outline-success" type="submit">Check</button>
           </form>
-          <button id="toggleButton" class="btn btn-dark mt-1 mb-1">Dark Mode</button>
         </div>
       </div>
     </nav>
@@ -79,7 +93,7 @@
         <h1 class="display-4 fw-bold text-body-emphasis">Move With Ease</h1>
         <div class="col-lg-6 mx-auto">
           <p class="lead mb-4">
-            "Choose movEZ for a hassle-free move! Our expert team handles
+            "Choose SwiftShift for a hassle-free move! Our expert team handles
             packing, loading, transportation, and unpacking with precision.
             Enjoy peace of mind knowing your belongings are in safe hands. Say
             goodbye to stress and hello to seamless moving. Trust SwiftShift for

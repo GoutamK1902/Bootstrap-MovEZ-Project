@@ -11,17 +11,19 @@ function toggleAttribute() {
     // If attribute doesn't exist, add it
     htmlElement.setAttribute(attributeName, attributeValue);
   }
-  toggleText();
+  // toggleText();
   buttonbg();
+  modeSvg();
 }
-function toggleText() {
-  var element = document.getElementById("toggleButton");
-  var currentText = element.textContent;
-  var newText = currentText === "Dark Mode" ? "Light Mode" : "Dark Mode";
 
-  // Update the text content of the element
-  element.textContent = newText;
-}
+// function toggleText() {
+//   var element = document.getElementById("toggleButton");
+//   var currentText = element.textContent;
+//   var newText = currentText === "Dark Mode" ? "Light Mode" : "Dark Mode";
+
+//   // Update the text content of the element
+//   element.textContent = newText;
+// }
 
 function buttonbg() {
   let element = document.getElementById("toggleButton");
@@ -33,7 +35,16 @@ function buttonbg() {
     element.classList.add("btn-dark");
   }
 }
+function modeSvg() {
+  let element = document.getElementById("toggleButton");
+  let srcValue = element.getAttribute("src");
 
+  if (srcValue === "sun.svg") {
+    element.setAttribute("src", "moon.svg");
+  } else {
+    element.setAttribute("src", "sun.svg");
+  }
+}
 // Add event listener to button
 document
   .getElementById("toggleButton")
